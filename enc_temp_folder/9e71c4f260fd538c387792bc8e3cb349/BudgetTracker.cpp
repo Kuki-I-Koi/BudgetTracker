@@ -70,7 +70,7 @@ void searchByCategory(const std::vector<entry>& Entries) {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // <- clears the buffer
 
     std::string searchCategory;
-    std::cout << "\nEnter the category to search for: ";
+    std::cout << "\nEnter the name to search for: ";
     std::getline(std::cin, searchCategory);
 
     std::transform(searchCategory.begin(), searchCategory.end(), searchCategory.begin(), ::tolower);  //<- convert name for case insensitive comparison
