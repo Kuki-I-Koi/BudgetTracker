@@ -166,7 +166,7 @@ entry createEntry() {
         if (std::cin.fail() || entry.cost < 0) {     //<- // Check if the input is valid (a number)
             std::cin.clear(); 
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //<- Ignore the rest of the invalid input
-            std::cout << "Invalid input. Please enter a valid age (positive number).\n";
+            std::cout << "Invalid input. Please enter a valid cost (positive number).\n";
         }
         else {
             break; // <-Exit the loop if valid input is given
